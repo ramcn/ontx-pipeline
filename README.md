@@ -8,23 +8,15 @@ Software pipeline to execute the ONTX hybrid pipeline for acceleration
 
 * Dataset and work flow to execute a sample hybrid pipeline  
 
-# Getting Started
-
-
-```bash
-git clone https://github.com/ramcn/ontx-pipeline 
-cd ontx-pipeline/dataset
-export PATH=$PATH:ontx-pipeline/x86-bin
-./hybrid-workflow.sh
-```
 
 ### Compilation From Source
-Flappie has the following dependences
+Refer each subdirectories for the dependency. Flappie for example has the below requirement.
 * [Cmake](https://cmake.org/) for building
 * [CUnit](http://cunit.sourceforge.net/) library for unit testing
 * [HDF5](https://www.hdfgroup.org/) library
 * [OpenBLAS](https://www.openblas.net/) library for linear algebra
 
+Similarly install the dependency mentioned in the README of spades, darwin and nanopolish. And then proceed forward to compilation as below.
 
 
 ```bash
@@ -38,4 +30,12 @@ cd darwin; make
 git clone https://github.com/jts/nanopolish; cd nanopolish; make 
 ```
 
+# Running the pipeline
 
+
+```bash
+git clone https://github.com/ramcn/ontx-pipeline 
+cd ontx-pipeline/dataset
+export PATH=$PATH:ontx-pipeline/x86-bin
+./hybrid-workflow.sh
+```
