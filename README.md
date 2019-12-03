@@ -1,6 +1,3 @@
-![Oxford Nanopore Technologies logo](images/ONT_logo_590x106.png)
-
-
 # ONTX pipeline
 
 ## Overview
@@ -13,25 +10,12 @@ Software pipeline to execute the ONTX hybrid pipeline for acceleration
 
 # Getting Started
 
-## Input and Output
-
-## Installation
-Flappie has been tested on Ubuntu 16.04.5 LTS.  Other systems may be
-compatible.
-
-Flappie models and other large resources are stored using [git
-lfs](https://git-lfs.github.com/) and this extension must be installed
-to successfully clone the repository.
 
 ```bash
-git clone https://github.com/nanoporetech/flappie
-cd flappie
-make flappie
-```
-
-An alternative location for the HDF5 library, for example one installed by `brew`, can be specified as:
-```bash
-hdf5Root=/usr/local/ make flappie
+git clone https://github.com/ramcn/ontx-pipeline 
+cd ontx-pipeline
+export PATH=$PATH:ontx-pipeline/x86-bin
+./hybrid-workflow.sh
 ```
 
 ### Compilation From Source
