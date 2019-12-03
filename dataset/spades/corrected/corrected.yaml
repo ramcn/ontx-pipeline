@@ -1,0 +1,8 @@
+- "left reads":
+  - "/home/chakenal/ontx-pipeline/dataset/spades/corrected/Kp2146_paired_1.fastq.00.0_0.cor.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/home/chakenal/ontx-pipeline/dataset/spades/corrected/Kp2146_paired_2.fastq.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/home/chakenal/ontx-pipeline/dataset/spades/corrected/Kp2146_paired__unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"

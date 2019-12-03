@@ -1,0 +1,207 @@
+Determining if the atomic_fetchadd_long exist failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a07af/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a07af.dir/build.make CMakeFiles/cmTC_a07af.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a07af.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fopenmp    -o CMakeFiles/cmTC_a07af.dir/CheckSymbolExists.c.o   -c /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c:3:28: fatal error: machine/atomic.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_a07af.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_a07af.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_a07af.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a07af/fast' failed
+make: *** [cmTC_a07af/fast] Error 2
+
+File /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/types.h>
+#include <machine/atomic.h>
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef atomic_fetchadd_long
+  return ((int*)(&atomic_fetchadd_long))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the OSAtomicAdd64 exist failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_af8c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_af8c9.dir/build.make CMakeFiles/cmTC_af8c9.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_af8c9.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fopenmp    -o CMakeFiles/cmTC_af8c9.dir/CheckSymbolExists.c.o   -c /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:30: fatal error: libkern/OSAtomic.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_af8c9.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_af8c9.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_af8c9.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_af8c9/fast' failed
+make: *** [cmTC_af8c9/fast] Error 2
+
+File /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <libkern/OSAtomic.h>
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OSAtomicAdd64
+  return ((int*)(&OSAtomicAdd64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the OSSpinLockLock exist failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_41b5f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_41b5f.dir/build.make CMakeFiles/cmTC_41b5f.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41b5f.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fopenmp    -o CMakeFiles/cmTC_41b5f.dir/CheckSymbolExists.c.o   -c /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:30: fatal error: libkern/OSAtomic.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_41b5f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_41b5f.dir/CheckSymbolExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_41b5f.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_41b5f/fast' failed
+make: *** [cmTC_41b5f/fast] Error 2
+
+File /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <libkern/OSAtomic.h>
+#include <inttypes.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef OSSpinLockLock
+  return ((int*)(&OSSpinLockLock))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function _malloc_thread_cleanup exists failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc803/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc803.dir/build.make CMakeFiles/cmTC_dc803.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc803.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fopenmp -DCHECK_FUNCTION_EXISTS=_malloc_thread_cleanup   -o CMakeFiles/cmTC_dc803.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dc803
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc803.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=_malloc_thread_cleanup    CMakeFiles/cmTC_dc803.dir/CheckFunctionExists.c.o  -o cmTC_dc803 -rdynamic 
+CMakeFiles/cmTC_dc803.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `_malloc_thread_cleanup'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dc803.dir/build.make:97: recipe for target 'cmTC_dc803' failed
+make[1]: *** [cmTC_dc803] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dc803/fast' failed
+make: *** [cmTC_dc803/fast] Error 2
+
+
+Determining if the function _pthread_mutex_init_calloc_cb, exists failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_35f7f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_35f7f.dir/build.make CMakeFiles/cmTC_35f7f.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35f7f.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fopenmp -DCHECK_FUNCTION_EXISTS=_pthread_mutex_init_calloc_cb,   -o CMakeFiles/cmTC_35f7f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:28: error: expected identifier or ‘(’ before ‘)’ token
+ char CHECK_FUNCTION_EXISTS();
+                            ^
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c: In function ‘main’:
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14:25: error: expected expression before ‘)’ token
+   CHECK_FUNCTION_EXISTS();
+                         ^
+CMakeFiles/cmTC_35f7f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_35f7f.dir/CheckFunctionExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_35f7f.dir/CheckFunctionExists.c.o] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_35f7f/fast' failed
+make: *** [cmTC_35f7f/fast] Error 2
+
+
+Determining if files cxxabi.h exist failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_34646/fast"
+/usr/bin/make -f CMakeFiles/cmTC_34646.dir/build.make CMakeFiles/cmTC_34646.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_34646.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -fopenmp    -o CMakeFiles/cmTC_34646.dir/CheckIncludeFiles.c.o   -c /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: cxxabi.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_34646.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_34646.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_34646.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_34646/fast' failed
+make: *** [cmTC_34646/fast] Error 2
+
+Source:
+/* */
+#include <cxxabi.h>
+
+
+int main(void){return 0;}
+
+Determining if files mach/mach.h exist failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c4d3d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4d3d.dir/build.make CMakeFiles/cmTC_c4d3d.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4d3d.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -fopenmp    -o CMakeFiles/cmTC_c4d3d.dir/CheckIncludeFiles.c.o   -c /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:23: fatal error: mach/mach.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_c4d3d.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_c4d3d.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_c4d3d.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c4d3d/fast' failed
+make: *** [cmTC_c4d3d/fast] Error 2
+
+Source:
+/* */
+#include <mach/mach.h>
+
+
+int main(void){return 0;}
+
+Determining if the function shm_open exists failed with the following output:
+Change Dir: /home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3a318/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3a318.dir/build.make CMakeFiles/cmTC_3a318.dir/build
+make[1]: Entering directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a318.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fopenmp -DCHECK_FUNCTION_EXISTS=shm_open   -o CMakeFiles/cmTC_3a318.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3a318
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a318.dir/link.txt --verbose=1
+/usr/bin/cc   -fopenmp -DCHECK_FUNCTION_EXISTS=shm_open    CMakeFiles/cmTC_3a318.dir/CheckFunctionExists.c.o  -o cmTC_3a318 -rdynamic 
+CMakeFiles/cmTC_3a318.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x15): undefined reference to `shm_open'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3a318.dir/build.make:97: recipe for target 'cmTC_3a318' failed
+make[1]: *** [cmTC_3a318] Error 1
+make[1]: Leaving directory '/home/chakenal/ontx-pipeline/SPAdes-3.13.1/build_spades/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3a318/fast' failed
+make: *** [cmTC_3a318/fast] Error 2
+
+

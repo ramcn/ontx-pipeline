@@ -1,0 +1,7 @@
+"bwa": "/home/chakenal/nanopolish/SPAdes-3.13.0-Linux/bin/spades-bwa"
+"dataset": "/home/chakenal/ontx-pipeline/dataset/spades/input_dataset.yaml"
+"log_filename": "log.properties"
+"max_nthreads": !!int "16"
+"output_dir": "/home/chakenal/ontx-pipeline/dataset/spades/mismatch_corrector/scaffolds"
+"strategy": "mapped_squared"
+"work_dir": "/home/chakenal/ontx-pipeline/dataset/spades/tmp/corrector_gl89y764"

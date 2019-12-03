@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/ext/src/edlib/edlib.cpp
+edlib/edlib.h
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/ext/src/edlib/edlib/edlib.h
+stdint.h
+-
+cstdlib
+-
+algorithm
+-
+vector
+-
+cstring
+-
+string
+-
+
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/src/../ext/include/edlib/edlib.h
+

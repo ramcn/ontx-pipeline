@@ -1,0 +1,6 @@
+- "left reads":
+  - "/home/chakenal/ontx-pipeline/dataset/Kp2146_paired_1.fastq.gz"
+  "orientation": "fr"
+  "right reads":
+  - "/home/chakenal/ontx-pipeline/dataset/Kp2146_paired_2.fastq.gz"
+  "type": "paired-end"

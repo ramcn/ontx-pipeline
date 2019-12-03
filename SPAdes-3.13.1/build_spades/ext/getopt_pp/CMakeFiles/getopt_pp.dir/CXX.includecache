@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/ext/src/getopt_pp/getopt_pp.cpp
+unistd.h
+-
+getopt_pp/getopt_pp.h
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/ext/src/getopt_pp/getopt_pp/getopt_pp.h
+
+/home/chakenal/ontx-pipeline/SPAdes-3.13.1/src/../ext/include/getopt_pp/getopt_pp.h
+string
+-
+vector
+-
+map
+-
+sstream
+-
+
