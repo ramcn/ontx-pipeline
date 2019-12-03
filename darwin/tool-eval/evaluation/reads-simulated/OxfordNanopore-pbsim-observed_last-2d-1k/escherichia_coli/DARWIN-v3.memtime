@@ -1,0 +1,6 @@
+Command line: /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../tools/cgmemtime/cgmemtime -o /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../evaluation/reads-simulated/OxfordNanopore-pbsim-observed_last-2d-1k/escherichia_coli/DARWIN-v3.memtime /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/wrappers/../aligners/darwin-algo-dev/darwin_ref_guided /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../reference-genomes/escherichia_coli.fa /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../reads-simulated/OxfordNanopore-pbsim-observed_last-2d-1k/escherichia_coli/reads.fa 1 256 34 256 120
+Real time:   53.339 s
+CPU time:  656.200 s
+User time:  653.856 s
+System time:    2.344 s
+Maximum RSS: 192 MB

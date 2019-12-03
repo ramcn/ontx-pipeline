@@ -1,0 +1,41 @@
+SAM file: /home/rachana/darwin-xl/enzo/darwin-xl/tool-eval/src/../evaluation/reads-simulated/OxfordNanopore-pbsim-observed_last-2d-1k/escherichia_coli/DARWIN-v3.sam
+SAM timestamp: 1553981410.95
+(recall)    TP / num_unique_references = 916 (91.60%)
+            FP / num_unique_references = 43 (4.30%)
+(precision) TP / total_uniquely_mapped) = 916 (95.52%)
+            FP / total_uniquely_mapped = 43 (4.48%)
+total_mapped = 959 (95.90%)
+not_mapped = 41 (4.10%)
+num_alignments_in_sam = 959
+num_mapped_alignments_in_sam = 959
+num_unmapped_alignments_in_sam = 0
+num_reads_in_sam = 959
+num_unambiguous_reads = 959
+-
+distance_histogram[0]               = 646
+distance_histogram[10]              = 915
+distance_histogram[49]              = 916
+-
+distance_accuracy[0]             = 67.36%
+distance_accuracy[10]            = 95.41%
+distance_accuracy[49]            = 95.52%
+-
+distance_recall[0]  = 64.60%
+distance_recall[10] = 91.50%
+distance_recall[49] = 91.60%
+Execution stats:
+	Command line: /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../tools/cgmemtime/cgmemtime -o /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../evaluation/reads-simulated/OxfordNanopore-pbsim-observed_last-2d-1k/escherichia_coli/DARWIN-v3.memtime /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/wrappers/../aligners/darwin-algo-dev/darwin_ref_guided /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../reference-genomes/escherichia_coli.fa /mnt/nvm/graphmap/graphmap-new/graphmap-reproduce/tools/aligneval/src/../reads-simulated/OxfordNanopore-pbsim-observed_last-2d-1k/escherichia_coli/reads.fa 1 256 34 256 120
+	Real time:   53.339 s
+	CPU time:  656.200 s
+	User time:  653.856 s
+	System time:    2.344 s
+	Maximum RSS: 192 MB
+Modified time: Sat Mar 30 15:30:10 2019
+Number of correctly mapped bases: 0
+Number of mapped bases: 0
+Number of bases in input SAM: 5634721
+Precision (per-base): 0.00
+Recall (per-base): 0.00
+(strict) Precision (per-base): 0.00
+(strict) Recall (per-base): 0.00
+
