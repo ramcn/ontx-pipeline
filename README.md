@@ -13,7 +13,7 @@ Software pipeline to execute the ONTX hybrid pipeline for acceleration
 
 ```bash
 git clone https://github.com/ramcn/ontx-pipeline 
-cd ontx-pipeline
+cd ontx-pipeline/dataset
 export PATH=$PATH:ontx-pipeline/x86-bin
 ./hybrid-workflow.sh
 ```
